@@ -29,13 +29,36 @@ HTML elements are used to describe the structure of the page (e.g. headings, sub
 
 HTML elements can have nested elements, forming a parent to child hierarchical relationship. A paragraph can contain a hyperlink or a page section or division can contain another section or division, or even a list. In fact, a list can even contain another list. When we nest elements like this, we MUST indent them, like so:
 
+```html
+<body>
+    <div id="container" class="container">
+        <p>
+            This paragraph tag belongs to the div tag with id "container", and the div tag belongs to the body tag!
+        </p>
+    </div
+</body>
+```
+
 _NOTICE_ now each tag in the above example is indented by one tab (four spaces) to visually express the parent/child relationships! Always properly indent your HTML!
 
 * * *
 
 ## [Setup](#setup)
 
-1.  [-] In the root directory of well-of-html, open the file named `index.html`, and within the `<body>` tag, you'll find a `<div>` and two comments stating your markup will be inserted below and above here. You will insert your HTML between these comments:
+1.   # [checkbox:unchecked] In the root directory of well-of-html, open the file named `index.html`, and within the `<body>` tag, you'll find a `<div>` and two comments stating your markup will be inserted below and above here. You will insert your HTML between these comments:
+
+```html
+<body>
+    <div id="container" class="container">
+        <!-- ALL YOUR MARKUP GOES BELOW HERE -->
+
+
+
+
+        <!-- ALL YOUR MARKUP GOES ABOVE HERE -->
+    </div>
+    <!-- other html... -->
+```
 
 _NOTE:_ If you'd like to add CSS styling rules to your markup, you can do so in the `<style>` tag, located in the `<head>` tag of the `index.html` page.
 
@@ -88,6 +111,14 @@ Ordered, unordered, and definition.
 2.  [-] Create a `<ol></ol>`, with several `<li></li>`.
 
 #### Definition Lists
+```html
+<dl>
+  <dt>Canada</dt>
+  <dd>A very cold country</dd>
+  <dt>Brazil</dt>
+  <dd>A very warm country</dd>
+</dl>
+```
 
 * * *
 
@@ -112,8 +143,78 @@ Forms are the bread and butter of the Internet. You can't swap out your credit c
 Here's the HTML and CSS for the above form:
 
 **Form HTML:**
+```html
+<form class="example-form">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" />
+    </div>
+    <div>
+        <label for="mail">E-mail:</label>
+        <input type="email" id="mail" />
+    </div>
+    <div>
+        <label for="msg">Message:</label>
+        <textarea id="msg"></textarea>
+    </div>
+
+    <div class="button">
+        <button type="submit">Send your message</button>
+    </div>
+</form>
+```
 
 **Form CSS:**
+```css
+.example-form {
+    /* Just to center the form on the page, use: margin: 0 auto;*/
+    margin: 20px;
+    width: 400px;
+    /* To see the outline of the form */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+
+.example-form div + div {
+    margin-top: 1em;
+}
+
+.example-form label {
+    /* To make sure that all labels have the same size and are properly aligned */
+    display: inline-block;
+    width: 90px;
+}
+
+.example-form input,
+.example-form textarea {
+    /* To make sure that all text fields have the same font settings
+    By default, textareas have a monospace font */
+    font: 1em sans-serif;
+    /* To give the same size to all text field */
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /* To harmonize the look & feel of text field border */
+    border: 1px solid #999;
+}
+
+.example-form input:focus,
+.example-form textarea:focus {
+    /* To give a little highlight on active elements */
+    border-color: #000;
+}
+
+.example-form textarea {
+    /* To properly align multiline text fields with their labels */
+    vertical-align: top;
+    /* To give enough room to type some text */
+    height: 5em;
+    /* To allow users to resize any textarea vertically
+    It does not work on every browsers */
+    resize: vertical;
+}
+```
 
 * * *
 
@@ -174,8 +275,46 @@ Tables are designed for expressing tabular data - data you'd find in a spreadshe
 Here's the HTML and CSS for the above table:
 
 **Table HTML:**
+```html
+<table>
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <td colspan="2">Names of students in class of 2020...</td>
+        </tr>
+    </tfoot>
+    <tbody>
+        <tr>
+            <td>Bob</td>
+            <td>Harrison</td>
+        </tr>
+        <tr>
+            <td>Judy</td>
+            <td>Dorsy</td>
+        </tr>
+    </tbody>
+</table>
+```
 
 **Table CSS:**
+
+```css
+table {
+    margin: 20px;
+}
+
+table,
+th,
+td {
+    padding: 4px;
+    border: 1px solid black;
+}
+```
 
 * * *
 
@@ -208,7 +347,7 @@ We'll exemplify using Flexbox and Bootstrap's Grid CSS.
 
 Let's say we have some <cod>div</cod> tags with content and we wanted to layout these divs in a row - normally, HTML elements will stack vertically, one on top of the other, but we want our row to flow from left to right across the page.
 
-<div style="display: flex;">
+<div style="display: flex; flex-direction: row; justify-content: space-between;">
 
 <div>One</div>
 
@@ -227,8 +366,26 @@ Let's say we have some <cod>div</cod> tags with content and we wanted to layout 
 Here's the HTML and CSS for the above Flexbox layout:
 
 **Flexbox Row Example HTML:**
+```html
+<div class="flex-row">
+    <div>One</div>
+    <div>Two</div>
+    <div>Three</div>
+    <div>Four</div>
+    <div>Five</div>
+</div>
+```
 
 **Flexbox Row Example CSS:**
+```css
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 4px;
+}
+```
 
 * * *
 
@@ -275,8 +432,36 @@ Let's say we want to have some images next to a description, and divide grid in 
 Here's the HTML and CSS for the above Bootstrap Grid layout:
 
 **Bootstrap Grid Example HTML:**
+```html
+<div class="example-grid">
+  <div class="row">
+      <div class="col-md-2"><img src="../img/cherries.jpg" class="row-img"></img>
+      </div>
+      <div class="col-md-10">Cherries are tasty things that grow on trees! You can eat them and feel good about yourself!</div>
+  </div>
+  <div class="row">
+      <div class="col-md-2"><img src="../img/black-currant.jpg" class="row-img"></img>
+      </div>
+      <div class="col-md-10">Black Currents are tasty things that grow on bushes! You can eat them and feel good about yourself!</div>
+  </div>
+  <div class="row">
+      <div class="col-md-2"><img src="../img/apple-in-grass.jpg" class="row-img"></img>
+      </div>
+      <div class="col-md-10">Apples are tasty things that grow on trees! You can eat them and feel good about yourself! They make great pies!</div>
+  </div>
+</div>
+```
 
 **Bootstrap Grid Example CSS:**
+```css
+.example-grid {
+    margin: 20px;
+}
+
+.row-img {
+    margin: 4px;
+}
+```
 
 * * *
 

@@ -45,7 +45,7 @@ _NOTICE_ now each tag in the above example is indented by one tab (four spaces) 
 
 ## [Setup](#setup)
 
-1.   # [checkbox:unchecked] In the root directory of well-of-html, open the file named `index.html`, and within the `<body>` tag, you'll find a `<div>` and two comments stating your markup will be inserted below and above here. You will insert your HTML between these comments:
+1. [ ] In the root directory of well-of-html, open the file named `index.html`, and within the `<body>` tag, you'll find a `<div>` and two comments stating your markup will be inserted below and above here. You will insert your HTML between these comments:
 
 ```html
 <body>
@@ -70,7 +70,7 @@ _NOTE:_ If you'd like to add CSS styling rules to your markup, you can do so in 
 
 Anchor tags, or the a tag, allow us to create hyperlinks to other sections of our page or to other webpages or files.
 
-1.  [-] Create a hyperlink using the anchor tag, `<a href="google.com"></a>`: set its `href` attribute to your favorite WIKI article.
+1.  [ ] Create a hyperlink using the anchor tag, `<a href="google.com"></a>`: set its `href` attribute to your favorite WIKI article.
 
 * * *
 
@@ -80,26 +80,26 @@ Image tags are one of HTML tags that do not require a closing tag, but can be cl
 
 ![](./img/cherries.jpg)
 
-1.  [-] Create an image tag, using one of the images in the directory `img/cherries.jpg` as the `src` attribute of the img tag, as in, `<img src="img/cherries.jpg" />`. Notice the slash before the end of the img tag: `/>`
+1.  [ ] Create an image tag, using one of the images in the directory `img/cherries.jpg` as the `src` attribute of the img tag, as in, `<img src="img/cherries.jpg" />`. Notice the slash before the end of the img tag: `/>`
 
 * * *
 
 ### 1.1 Headings
 
-1.  [-] Create text headings using tags `<h1></h1>` through `<h6></h6>`.
-2.  [-] Bonus, use Bootstrap `<small></small>` within a header!
+1.  [ ] Create text headings using tags `<h1></h1>` through `<h6></h6>`.
+2.  [ ] Bonus, use Bootstrap `<small></small>` within a header!
 
 * * *
 
 ### 1.2 Paragraphs
 
-1.  [-] Create some paragraphs with text using `<p></p>`.
+1.  [ ] Create some paragraphs with text using `<p></p>`.
 
 * * *
 
 ### 1.3 Bold, Italics, and Emphasis
 
-1.  [-] Within a paragraph, add bold, italics, and emphasis with `<b></b>`, `<i></i>` or `<em></em>`, or `<strong></strong>`.
+1.  [ ] Within a paragraph, add bold, italics, and emphasis with `<b></b>`, `<i></i>` or `<em></em>`, or `<strong></strong>`.
 
 * * *
 
@@ -107,8 +107,8 @@ Image tags are one of HTML tags that do not require a closing tag, but can be cl
 
 Ordered, unordered, and definition.
 
-1.  [-] Create a `<ul></ul>`, with several `<li></li>`.
-2.  [-] Create a `<ol></ol>`, with several `<li></li>`.
+1.  [ ] Create a `<ul></ul>`, with several `<li></li>`.
+2.  [ ] Create a `<ol></ol>`, with several `<li></li>`.
 
 #### Definition Lists
 ```html
@@ -218,7 +218,7 @@ Here's the HTML and CSS for the above form:
 
 * * *
 
-1.  [-] Create a `<form></form>`, with several different types of `<inputs/>`.
+1.  [ ] Create a `<form></form>`, with several different types of `<inputs/>`.
 
 * * *
 
@@ -318,8 +318,8 @@ td {
 
 * * *
 
-1.  [-] Create a `<table></table>`, with several `<tr></tr>`, each with the same number of `<td></td>`.
-2.  [-] Bonus: Create headers for your table using `<th></th>`. See [W3 Schools: tables...](http://www.w3schools.com/html/html_tables.asp)
+1.  [ ] Create a `<table></table>`, with several `<tr></tr>`, each with the same number of `<td></td>`.
+2.  [ ] Bonus: Create headers for your table using `<th></th>`. See [W3 Schools: tables...](http://www.w3schools.com/html/html_tables.asp)
 
 * * *
 
@@ -327,7 +327,7 @@ td {
 
 A `<div></div>` tag represents a document division, a way by which we can section off the page and group content. You'll use divs alot to invisibly group elements and content!
 
-1.  [-] Create 5 `<div></div>` tags, and put some content, text, or another HTML element within each `div`.
+1.  [ ] Create 5 `<div></div>` tags, and put some content, text, or another HTML element within each `div`.
 
 * * *
 
@@ -389,7 +389,7 @@ Here's the HTML and CSS for the above Flexbox layout:
 
 * * *
 
-1.  [-] Create a row-like Flexbox layout.
+1.  [ ] Create a row-like Flexbox layout.
 
 * * *
 
@@ -465,7 +465,7 @@ Here's the HTML and CSS for the above Bootstrap Grid layout:
 
 * * *
 
-1.  [-] Create a Bootstrap grid-like layout.
+1.  [ ] Create a Bootstrap grid-like layout.
 
 * * *
 

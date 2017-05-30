@@ -78,7 +78,7 @@ Anchor tags, or the a tag, allow us to create hyperlinks to other sections of ou
 
 Image tags are one of HTML tags that do not require a closing tag, but can be closed with simply a slash at the end of the tag.
 
-![](../img/cherries.jpg)
+![](./img/cherries.jpg)
 
 1.  [-] Create an image tag, using one of the images in the directory `img/cherries.jpg` as the `src` attribute of the img tag, as in, `<img src="img/cherries.jpg" />`. Notice the slash before the end of the img tag: `/>`
 
@@ -403,7 +403,7 @@ Let's say we want to have some images next to a description, and divide grid in 
 
 <div class="row">
 
-<div class="col-md-2">![](../img/cherries.jpg)</div>
+<div class="col-md-2">![](./img/cherries.jpg)</div>
 
 <div class="col-md-10">Cherries are tasty things that grow on trees! You can eat them and feel good about yourself!</div>
 
@@ -411,7 +411,7 @@ Let's say we want to have some images next to a description, and divide grid in 
 
 <div class="row">
 
-<div class="col-md-2">![](../img/black-currant.jpg)</div>
+<div class="col-md-2">![](./img/black-currant.jpg)</div>
 
 <div class="col-md-10">Black Currents are tasty things that grow on bushes! You can eat them and feel good about yourself!</div>
 
@@ -419,7 +419,7 @@ Let's say we want to have some images next to a description, and divide grid in 
 
 <div class="row">
 
-<div class="col-md-2">![](../img/apple-in-grass.jpg)</div>
+<div class="col-md-2">![](./img/apple-in-grass.jpg)</div>
 
 <div class="col-md-10">Apples are tasty things that grow on trees! You can eat them and feel good about yourself! They make great pies!</div>
 
@@ -435,17 +435,17 @@ Here's the HTML and CSS for the above Bootstrap Grid layout:
 ```html
 <div class="example-grid">
   <div class="row">
-      <div class="col-md-2"><img src="../img/cherries.jpg" class="row-img"></img>
+      <div class="col-md-2"><img src="./img/cherries.jpg" class="row-img"></img>
       </div>
       <div class="col-md-10">Cherries are tasty things that grow on trees! You can eat them and feel good about yourself!</div>
   </div>
   <div class="row">
-      <div class="col-md-2"><img src="../img/black-currant.jpg" class="row-img"></img>
+      <div class="col-md-2"><img src="./img/black-currant.jpg" class="row-img"></img>
       </div>
       <div class="col-md-10">Black Currents are tasty things that grow on bushes! You can eat them and feel good about yourself!</div>
   </div>
   <div class="row">
-      <div class="col-md-2"><img src="../img/apple-in-grass.jpg" class="row-img"></img>
+      <div class="col-md-2"><img src="./img/apple-in-grass.jpg" class="row-img"></img>
       </div>
       <div class="col-md-10">Apples are tasty things that grow on trees! You can eat them and feel good about yourself! They make great pies!</div>
   </div>

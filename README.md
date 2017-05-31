@@ -337,29 +337,7 @@ We'll exemplify using Flexbox and Bootstrap's Grid CSS.
 
 Let's say we have some <cod>div</cod> tags with content and we wanted to layout these divs in a row - normally, HTML elements will stack vertically, one on top of the other, but we want our row to flow from left to right across the page.
 
-<style media="screen">
-    .flex-row {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 20px;
-        padding: 4px;
-    }
-</style>
-
-<div class="flex-row">
-
-<div>One</div>
-
-<div>Two</div>
-
-<div>Three</div>
-
-<div>Four</div>
-
-<div>Five</div>
-
-</div>
+![](./img/flexbox.png)
 
 * * *
 

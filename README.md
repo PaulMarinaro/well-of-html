@@ -128,7 +128,7 @@ Forms are the bread and butter of the Internet. You can't swap out your credit c
 
 [Here's a really great getting started guide to forms...](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/My_first_HTML_form)
 
-<div>![](./img/bootstrap.jpg)</div>
+<div>![](./img/bootstrap.png)</div>
 
 Here's the HTML and CSS for the above form:
 
@@ -389,7 +389,7 @@ Bootstrap is a CSS framework released by Twitter, it is installed in the `index.
 
 Let's say we want to have some images next to a description, and divide grid in columns relatively by 2 and 10.
 
-<div>![](./img/bootstrap.jpg)</div>
+<div>![](./img/bootstrap.png)</div>
 
 * * *
 

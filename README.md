@@ -66,7 +66,7 @@ _NOTE:_ If you'd like to add CSS styling rules to your markup, you can do so in 
 
 ## Exercise 1 : Creating Markup
 
-### 0 Anchor (aka Hyperlink)
+### 1.0 Anchor (aka Hyperlink)
 
 Anchor tags, or the a tag, allow us to create hyperlinks to other sections of our page or to other webpages or files.
 
@@ -74,7 +74,7 @@ Anchor tags, or the a tag, allow us to create hyperlinks to other sections of ou
 
 * * *
 
-### 1.0 Images
+### 1.1 Images
 
 Image tags are one of HTML tags that do not require a closing tag, but can be closed with simply a slash at the end of the tag.
 
@@ -84,26 +84,26 @@ Image tags are one of HTML tags that do not require a closing tag, but can be cl
 
 * * *
 
-### 1.1 Headings
+### 1.2 Headings
 
 1.  [ ] Create text headings using tags `<h1></h1>` through `<h6></h6>`.
 2.  [ ] Bonus, use Bootstrap `<small></small>` within a header!
 
 * * *
 
-### 1.2 Paragraphs
+### 1.3 Paragraphs
 
 1.  [ ] Create some paragraphs with text using `<p></p>`.
 
 * * *
 
-### 1.3 Bold, Italics, and Emphasis
+### 1.4 Bold, Italics, and Emphasis
 
 1.  [ ] Within a paragraph, add bold, italics, and emphasis with `<b></b>`, `<i></i>` or `<em></em>`, or `<strong></strong>`.
 
 * * *
 
-### 1.4 Lists
+### 1.5 Lists
 
 Ordered, unordered, and definition.
 
@@ -122,23 +122,13 @@ Ordered, unordered, and definition.
 
 * * *
 
-### 1.5 Forms
+### 1.6 Forms
 
 Forms are the bread and butter of the Internet. You can't swap out your credit card without a form!
 
 [Here's a really great getting started guide to forms...](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/My_first_HTML_form)
 
-<form class="example-form">
-
-<div><label for="name">Name:</label> <input type="text" id="name"></div>
-
-<div><label for="mail">E-mail:</label> <input type="email" id="mail"></div>
-
-<div><label for="msg">Message:</label><textarea id="msg"></textarea></div>
-
-<div class="button"><button type="submit">Send your message</button></div>
-
-</form>
+<div>![](./img/bootstrap.jpg)</div>
 
 Here's the HTML and CSS for the above form:
 
@@ -222,7 +212,7 @@ Here's the HTML and CSS for the above form:
 
 * * *
 
-### 1.6 Tables
+### 1.7 Tables
 
 Tables are designed for expressing tabular data - data you'd find in a spreadsheet. They are not designed for layout - for layout, we use CSS.
 
@@ -323,7 +313,7 @@ td {
 
 * * *
 
-### 1.7 Div
+### 1.8 Div
 
 A `<div></div>` tag represents a document division, a way by which we can section off the page and group content. You'll use divs alot to invisibly group elements and content!
 
@@ -331,7 +321,7 @@ A `<div></div>` tag represents a document division, a way by which we can sectio
 
 * * *
 
-### 1.8 Layout
+### 1.9 Layout
 
 You're going to need to layout stuff, sometimes in complex ways, so here's a primer on practical layout.
 
@@ -399,33 +389,7 @@ Bootstrap is a CSS framework released by Twitter, it is installed in the `index.
 
 Let's say we want to have some images next to a description, and divide grid in columns relatively by 2 and 10.
 
-<div class="example-grid">
-
-<div class="row">
-
-<div class="col-md-2">![](./img/cherries.jpg)</div>
-
-<div class="col-md-10">Cherries are tasty things that grow on trees! You can eat them and feel good about yourself!</div>
-
-</div>
-
-<div class="row">
-
-<div class="col-md-2">![](./img/black-currant.jpg)</div>
-
-<div class="col-md-10">Black Currents are tasty things that grow on bushes! You can eat them and feel good about yourself!</div>
-
-</div>
-
-<div class="row">
-
-<div class="col-md-2">![](./img/apple-in-grass.jpg)</div>
-
-<div class="col-md-10">Apples are tasty things that grow on trees! You can eat them and feel good about yourself! They make great pies!</div>
-
-</div>
-
-</div>
+<div>![](./img/bootstrap.jpg)</div>
 
 * * *
 

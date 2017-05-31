@@ -357,6 +357,17 @@ Here's the HTML and CSS for the above Flexbox layout:
 
 **Flexbox Row Example HTML:**
 ```html
+
+<style media="screen">
+    .flex-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 20px;
+        padding: 4px;
+    }
+</style>
+
 <div class="flex-row">
     <div>One</div>
     <div>Two</div>

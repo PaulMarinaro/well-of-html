@@ -128,7 +128,7 @@ Forms are the bread and butter of the Internet. You can't swap out your credit c
 
 [Here's a really great getting started guide to forms...](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/My_first_HTML_form)
 
-<div>![](./img/bootstrap.png)</div>
+![](./img/bootstrap.png)
 
 Here's the HTML and CSS for the above form:
 

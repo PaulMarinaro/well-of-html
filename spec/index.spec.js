@@ -87,8 +87,8 @@ describe('Product Project', function(){
   });
 
   it('should use flexbox', function(done){
-    browser.assert.elements('.flex', {atLeast: 1}, 'Add the class "flex" to an element and use flexbox!');
-    browser.assert.elements('.flex > *', {atLeast: 2}, 'Add more children to the "flex" element to see more results from flexbox!');
+    browser.assert.elements('.flex-row', {atLeast: 1}, 'Add the class "flex" to an element and use flexbox!');
+    browser.assert.elements('.flex-row > *', {atLeast: 2}, 'Add more children to the "flex" element to see more results from flexbox!');
     done();
   });
 

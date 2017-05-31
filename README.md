@@ -337,7 +337,17 @@ We'll exemplify using Flexbox and Bootstrap's Grid CSS.
 
 Let's say we have some <cod>div</cod> tags with content and we wanted to layout these divs in a row - normally, HTML elements will stack vertically, one on top of the other, but we want our row to flow from left to right across the page.
 
-<div style="display: flex; flex-direction: row; justify-content: space-between;">
+<style media="screen">
+    .flex-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 20px;
+        padding: 4px;
+    }
+</style>
+
+<div class="flex-row">
 
 <div>One</div>
 
@@ -357,16 +367,6 @@ Here's the HTML and CSS for the above Flexbox layout:
 
 **Flexbox Row Example HTML:**
 ```html
-
-<style media="screen">
-    .flex-row {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 20px;
-        padding: 4px;
-    }
-</style>
 
 <div class="flex-row">
     <div>One</div>

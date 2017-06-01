@@ -368,7 +368,7 @@ Here's the HTML and CSS for the above Flexbox layout:
 
 * * *
 
-1.  [ ] Create a row-like Flexbox layout by creating a "flex-row" class.
+1.  [ ] Create a row-like Flexbox layout by creating and using a "flex-row" class.
 
 * * *
 

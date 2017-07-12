@@ -76,7 +76,7 @@ describe('Product Project', function(){
     browser.assert.elements('tbody', {atLeast: 1}, 'You\'re missing a <tbody> tag');
     browser.assert.elements('tfoot', {atLeast: 1}, 'You\'re missing a <tfoot> tag');
     browser.assert.elements('tr', {atLeast: 3}, 'You\'re missing a <tr> tag');
-    browser.assert.elements('th', {atLeast: 2}, 'You\'re missing a <th> tag');
+    browser.assert.elements('th', {atLeast: 1}, 'You\'re missing a <th> tag');
     browser.assert.elements('td', {atLeast: 3}, 'You\'re missing a <td> tag');
     done();
   });

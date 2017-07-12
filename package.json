@@ -12,7 +12,7 @@
   },
   "scripts": {
     "serve": "node ./test/server.js",
-    "mocha": "mocha -R spec ./test/index.spec.js",
+    "mocha": "mocha ./test/index.spec.js",
     "test": "concurrently --kill-others \"npm run serve\" \"npm run mocha\""
   }
 }

@@ -11,8 +11,8 @@
     "zombie": "^5.0.5"
   },
   "scripts": {
-    "test": "mocha ./test/index.spec.js",
     "serve": "node ./test/server.js",
-    "start": "concurrently --kill-others \"npm run serve\" \"npm test\""
+    "mocha": "mocha -R spec ./test/index.spec.js",
+    "test": "concurrently --kill-others \"npm run serve\" \"npm run mocha\""
   }
 }

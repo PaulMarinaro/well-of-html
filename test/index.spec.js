@@ -1,7 +1,7 @@
 var Browser = require('zombie');
 var browser = new Browser();
 
-const server = 'http://localhost:3000';
+const server = 'http://localhost:7777';
 
 describe('Product Project', function(){
 

@@ -3,7 +3,7 @@ var browser = new Browser();
 
 const server = 'http://localhost:7777';
 
-describe('Product Project', function(){
+describe('Well of HTML', function(){
 
   beforeEach(function(done) {
     browser.visit(server, done);

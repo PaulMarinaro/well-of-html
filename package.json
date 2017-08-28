@@ -11,6 +11,7 @@
     "zombie": "^5.0.5"
   },
   "scripts": {
-    "test": "mocha ./test/index.spec.js"
+    "test": "mocha ./test/index.spec.js",
+    "posttest": "rm -rf ./test ./node_modules"
   }
 }

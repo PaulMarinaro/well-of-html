@@ -1,3 +1,10 @@
+.heading {
+    width: 300px;
+    height: 100px;
+    
+
+}
+
 .example-form {
     /* Just to center the form on the page, use: margin: 0 auto;*/
     margin: 20px;
